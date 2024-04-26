@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.*;
 public class SkillsController {
 
     //TODO create a route with some html to display a hello message and a list of skills //goes to /8080
-
     @RequestMapping(value = "")
     public String skillTracker() {
         String html = "<h1>Skills Tracker</h1>" +
@@ -58,9 +57,7 @@ public class SkillsController {
         return html;
     }
 
-
     //TODO create a route that will handle that request with my choices once I submit
-
     @PostMapping("form")
     public String mySkillsPage(@RequestParam String name, @RequestParam String firstChoice, @RequestParam String secondChoice, @RequestParam String thirdChoice) {
         String html = "<h1>" + name + "</h1>" +
