@@ -57,6 +57,7 @@ public class SkillsController {
         return html;
     }
 
+    //alfhalkshf
     //TODO create a route that will handle that request with my choices once I submit
     @PostMapping("form")
     public String mySkillsPage(@RequestParam String name, @RequestParam String firstChoice, @RequestParam String secondChoice, @RequestParam String thirdChoice) {
